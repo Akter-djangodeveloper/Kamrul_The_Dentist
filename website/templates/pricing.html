@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Pricing For Dr. Kamrul{%endblock %}
+{% block meta_description %}Find our current prices for all major Dental Procedures.{% endblock %}
+
+{% block content %}
+
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Pricing</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Dento Pricing Table Area Start ***** -->
+  <section class="dento-pricing-table-area mt-50 section-padding-0-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Temporary filling</th>
+                  <td>1 times</td>
+                  <td>$10 || Tk. 500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Treatment filling with MTA</th>
+                  <td>1 times</td>
+                  <td>$200 || Tk.16,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Composite filling Class I</th>
+                  <td>1 tooth</td>
+                  <td>$50 || Tk.4,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Composite Filling Class II, III, IV, V and Class I modifications</th>
+                  <td>1 times</td>
+                  <td>$80 || Tk.6,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cosmetic filling</th>
+                  <td>1 times</td>
+                  <td>$80 || Tk.6,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">MOD fillings</th>
+                  <td>1 times</td>
+                  <td>$100 || Tk.8,000</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Surgical Tooth Extraction</th>
+                  <td>1 times</td>
+                  <td>$50 || Tk.4,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation</th>
+                  <td>1 times</td>
+                  <td>$80 || Tk.6,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">MOD fillings</th>
+                  <td>1 times</td>
+                  <td>$100 || Tk.8,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">MOD fillings</th>
+                  <td>1 times</td>
+                  <td>$100 || Tk.8,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go Back <i class="fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Pricing Table Area End ***** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+
+{% endblock %}
